@@ -1,4 +1,11 @@
 @charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
 /* Top bar */
 .top-bar {
   margin-top: 32px;
@@ -14,13 +21,14 @@
   height: 48px;
   margin-left: 16px;
 }
-.top-bar .navigation {
-  margin-right: 16px;
-  color: #ff6060;
-}
-.top-bar .navigation a {
+.top-bar .App-link {
   margin-left: 16px;
   color: #ff6060;
+  text-decoration: none;
+}
+.top-bar .App-link:hover {
+  color: #ff5905;
+  border-bottom: 1px solid #ff6060;
 }
 
 .footer {
@@ -43,6 +51,7 @@
   color: #ff6060;
 }
 .main .pNotFound {
+  align-items: center;
   font-weight: 500;
   font-size: 36px;
   line-height: 51.34px;
@@ -158,4 +167,36 @@
   border-radius: 25px;
   background: black;
   mix-blend-mode: darken;
+}
+
+.main .locationCards {
+  background-color: rgb(246, 246, 246);
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 32px;
+  margin: 64px;
+  flex-wrap: wrap;
+}
+.main .card {
+  width: 30%;
+  border: 1px solid navy;
+  /* width: 340px; */
+  height: 340px;
+  border-radius: 15px;
+  background-color: #ff6060;
+}
+.main .card .imgAppt {
+  width: 100%;
+  height: 80%;
+  border-radius: 15px;
+}
+.main .cardP {
+  display: flex;
+  justify-content: top;
+  width: 30%;
+  color: white;
+  margin-top: 0;
+  padding-left: 20px;
+  font-size: 18px;
 }/*# sourceMappingURL=style.css.map */

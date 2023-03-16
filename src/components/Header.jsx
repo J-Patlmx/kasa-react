@@ -8,25 +8,20 @@ function Header() {
                   <a
                     className="App-link"
                     href="/home"
-                    rel="noopener noreferrer"> Accueil</a>
+                    rel="noopener noreferrer"> Accueil </a>
 
-                    <br />
+              
                     <a
                     className="App-link"
                     href="/About"
-                    rel="noopener noreferrer"> A propos</a>
+                    rel="noopener noreferrer"> A propos </a>
 
-                    <br />
-                    <a
+<a
                     className="App-link"
                     href="/Page404"
-                    rel="noopener noreferrer"> 404</a>
-                
-                  <br />
-                    <a
-                    className="App-link"
-                    href="/Logement"
-                    rel="noopener noreferrer"> Logement</a> 
+                    rel="noopener noreferrer"> 404 </a>
+
+                     
             </nav>
         </header>
       </div>
