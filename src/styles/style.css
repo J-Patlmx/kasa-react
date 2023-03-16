@@ -64,28 +64,22 @@
   margin-bottom: 32px;
 }
 
-.mainApropos {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  background-color: rgb(246, 246, 246);
-  border-radius: 25px;
-  margin-left: 64px;
-  margin-right: 48px;
-  margin-bottom: 32px;
-}
-.mainApropos .hero {
+.hero {
+  position: relative;
+  font-style: normal;
   display: flex;
   align-items: center;
+  margin-left: 64px;
+  margin-right: 64px;
   margin-bottom: 32px;
 }
-.mainApropos .hero img {
-  width: 90vw;
+.hero img {
+  width: 100vw;
   height: 223px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: left center;
-     object-position: left center;
+  object-position: left center;
   border-radius: 25px;
   background: black;
   mix-blend-mode: darken;
@@ -129,4 +123,39 @@
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: #f1f1f1;
+}
+
+.hero {
+  position: relative;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  margin-left: 64px;
+  margin-right: 64px;
+  margin-bottom: 32px;
+}
+
+.hero h1 {
+  display: flex;
+  align-items: center;
+  color: white;
+  position: absolute;
+  justify-content: center;
+  z-index: 1;
+  font-size: 48px;
+  line-height: 68px;
+  left: 26%;
+  top: 24%;
+}
+
+.hero img {
+  width: 100vw;
+  height: 223px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: left center;
+  object-position: left center;
+  border-radius: 25px;
+  background: black;
+  mix-blend-mode: darken;
 }/*# sourceMappingURL=style.css.map */
