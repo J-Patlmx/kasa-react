@@ -1,0 +1,65 @@
+.mainApropos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: rgba(246, 246, 246, 1);
+  border-radius: 25px;
+  margin-left: 64px;
+  margin-right: 48px;
+  margin-bottom: 32px;
+
+  .hero {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+    img {
+      width: 90vw;
+      height: 223px;
+      object-fit: cover;
+      object-position: left center;
+      border-radius: 25px;
+      background: black;
+      mix-blend-mode: darken;
+    }
+  }
+}
+
+.collapsible {
+  background-color: #ff6060;
+  margin-bottom: 32px;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  height: 47px;
+  width: 100vw;
+  border-radius: 5px;
+}
+
+.active,
+.collapsible:hover {
+  color: white;
+}
+
+.collapsible:after {
+  content: "\2304";
+  color: white;
+  font-weight: 700;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2303";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}

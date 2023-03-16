@@ -2,7 +2,7 @@ import logo from '../assets/LOGO.png'
 function Header() {
     return (
       <div className="App">
-        <header className="App-header">
+        <header className="App-header top-bar">
           <img src={logo} className="App-logo" alt="logo" />
         <nav>
         <a
