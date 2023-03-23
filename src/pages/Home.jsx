@@ -1,9 +1,29 @@
 import Hero from '../assets/IMGhero.png'
-import imgLogement from '../assets/appt1.jpeg'
+import React, {useState, useEffect} from 'react';
+import Card from '../components/Card'
 
 function Home() {
+    const [logements, setlogements] = useState([]);
+
+    useEffect(() => {
+        fetch('../../datas/logements.json'
+            ,{
+                headers : { 
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                }
+            }
+            )
+            .then(function(response){          
+            return response.json();
+            }).then(function(myJson) {          
+            setlogements( myJson);
+            // console.log(logements)
+            })
+    }, []);
+
  return (
-        <div className='main'>
+        <>
           <div className="heroHome">
                 <div className="hero">
                       <img src={Hero} className="App-logo" alt="logo" />
@@ -13,43 +33,14 @@ function Home() {
           
           <div className="locationCards">
           
-                  <div className="card">
-                      <img src={imgLogement} className="imgAppt" alt="logo" />
-                      <p className="cardP">Titre de la location</p>
-                  </div>
-
-                  <div className="card">
-                      <img src={imgLogement} className="imgAppt" alt="logo" />
-                      <p className="cardP">Titre de la location</p>
-                  </div>
-
-                  <div className="card">
-                      <img src={imgLogement} className="imgAppt" alt="logo" />
-                      <p className="cardP">Titre de la location</p>
-                  </div>
-
-        
-
-        
-                  <div className="card">
-                      <img src={imgLogement} className="imgAppt" alt="logo" />
-                      <p className="cardP">Titre de la location</p>
-                  </div>
-                  
-                  <div className="card">
-                      <img src={imgLogement} className="imgAppt" alt="logo" />
-                      <p className="cardP">Titre de la location</p>
-                  </div>
-
-                  <div className="card">
-                      <img src={imgLogement} className="imgAppt" alt="logo" />
-                      <p className="cardP">Titre de la location</p>
-                  </div>
-
+                {logements.map(({ id, title,cover },index) =>
+                    <Card id={id} title= {title} cover = {cover} key={id}/>   
+				)}
         
 
           </div>
-        </div>
+        </>
 );}
  
 export default Home;
+

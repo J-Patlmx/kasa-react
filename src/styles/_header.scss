@@ -1,9 +1,10 @@
 /* Top bar */
 .top-bar {
-    margin-top: 32px;
-    margin-left: 64px;
-    margin-right: 64px;
-    margin-bottom: 32px;
+    // margin-top: 32px;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin: 32px 64px;
+    // margin-bottom: 32px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,10 +15,6 @@
         margin-left: 16px;
     }
 
-    // .navigation {
-    //   margin-right: 16px;
-    //   color: #ff6060;
-    // }
     .App-link {
         margin-left: 16px;
         color: #ff6060;

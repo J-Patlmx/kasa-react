@@ -6,12 +6,24 @@ body {
   text-decoration: none;
 }
 
-/* Top bar */
-.top-bar {
-  margin-top: 32px;
+main {
   margin-left: 64px;
   margin-right: 64px;
-  margin-bottom: 32px;
+}
+
+.not-display {
+  display: none;
+}
+
+.icon-rotate {
+  transform: rotate(180deg);
+}
+
+/* Top bar */
+.top-bar {
+  padding-left: 80px;
+  padding-right: 80px;
+  margin: 32px 64px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -78,8 +90,6 @@ body {
   font-style: normal;
   display: flex;
   align-items: center;
-  margin-left: 64px;
-  margin-right: 64px;
   margin-bottom: 32px;
 }
 .hero img {
@@ -94,17 +104,18 @@ body {
   mix-blend-mode: darken;
 }
 
-.collapse {
+.collapsCollection {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 32px;
 }
-.collapse .collapsible {
+.collapsCollection .collapsible {
+  margin-top: 32px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #ff6060;
-  margin-bottom: 32px;
   color: white;
   cursor: pointer;
   padding: 18px;
@@ -112,29 +123,17 @@ body {
   outline: none;
   font-size: 16px;
   height: 47px;
-  width: 80vw;
+  width: 80%;
   border-radius: 5px;
 }
-.collapse .active,
-.collapse .collapsible:hover {
-  color: white;
-}
-.collapse .collapsible:after {
-  content: "⌄";
-  color: white;
-  font-weight: 700;
-  float: right;
-  margin-left: 5px;
-}
-.collapse .active:after {
-  content: "⌃";
-}
-.collapse .content {
-  padding: 0 18px;
-  max-height: 0;
+.collapsCollection .content {
+  padding: 32px 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: #f1f1f1;
+  color: rgb(255, 96, 96);
+  width: 80%;
+  border-radius: 0 5px;
 }
 
 .hero {
@@ -168,7 +167,7 @@ body {
   filter: brightness(0.7);
 }
 
-.main .locationCards {
+.locationCards {
   background-color: rgb(246, 246, 246);
   border-radius: 25px;
   display: flex;
@@ -176,17 +175,18 @@ body {
   gap: 32px;
   margin: 64px;
   flex-wrap: wrap;
-  padding: 16px;
+  padding: 32px 16px;
 }
-.main .card {
+
+.card {
   width: 30%;
-  border: 1px solid navy;
   /* width: 340px; */
   height: 340px;
+  max-height: 30%;
   border-radius: 15px;
   background-color: #ff6060;
 }
-.main .card .imgAppt {
+.card .imgAppt {
   width: 100%;
   height: 80%;
   border-radius: 15px;
@@ -195,14 +195,14 @@ body {
   -o-object-position: center;
      object-position: center;
 }
-.main .cardP {
+
+.cardP {
   display: flex;
-  justify-content: top;
-  width: 30%;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 50%;
   color: white;
-  margin-top: 0;
-  padding-left: 20px;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .mainLogement .hero {

@@ -4,3 +4,13 @@ body {
     box-sizing: border-box;
     text-decoration: none;
 }
+main {
+    margin-left: 64px;
+    margin-right: 64px;
+}
+.not-display {
+    display: none;
+}
+.icon-rotate {
+    transform: rotate(180deg);
+}

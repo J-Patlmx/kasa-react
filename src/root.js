@@ -11,15 +11,17 @@ function AppRoutes() {
     return (
         <BrowserRouter>
             <Header />
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/home" element={<Home />} />
-                <Route path="/about" element={<About />} />
-                {/* <Route path="/logement/:id" element={<Logement />} /> */}
-                {/* Tout les root non disponible */}
-                <Route path="/logement/" element={<Logement />} />
-                <Route path="*" element={<Page404 />} />
-            </Routes>
+            <main>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/home" element={<Home />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/logement/:id" element={<Logement />} />
+                    {/* Tout les root non disponible */}
+
+                    <Route path="*" element={<Page404 />} />
+                </Routes>
+            </main>
             <Footer />
         </BrowserRouter>
     );

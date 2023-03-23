@@ -16,10 +16,10 @@ function Header() {
                     href="/About"
                     rel="noopener noreferrer"> A propos </a>
 
-<a
+{/* <a
                     className="App-link"
                     href="/Page404"
-                    rel="noopener noreferrer"> 404 </a>
+                    rel="noopener noreferrer"> 404 </a> */}
 
                      
             </nav>
