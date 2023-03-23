@@ -15,8 +15,9 @@ function AppRoutes() {
                 <Route path="/" element={<Home />} />
                 <Route path="/home" element={<Home />} />
                 <Route path="/about" element={<About />} />
-                <Route path="/logement/:id" element={<Logement />} />
+                {/* <Route path="/logement/:id" element={<Logement />} /> */}
                 {/* Tout les root non disponible */}
+                <Route path="/logement/" element={<Logement />} />
                 <Route path="*" element={<Page404 />} />
             </Routes>
             <Footer />

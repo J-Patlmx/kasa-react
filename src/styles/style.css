@@ -94,39 +94,42 @@ body {
   mix-blend-mode: darken;
 }
 
-.collapsible {
+.collapse {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.collapse .collapsible {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: #ff6060;
   margin-bottom: 32px;
   color: white;
   cursor: pointer;
   padding: 18px;
   border: none;
-  text-align: left;
   outline: none;
   font-size: 16px;
   height: 47px;
-  width: 100vw;
+  width: 80vw;
   border-radius: 5px;
 }
-
-.active,
-.collapsible:hover {
+.collapse .active,
+.collapse .collapsible:hover {
   color: white;
 }
-
-.collapsible:after {
+.collapse .collapsible:after {
   content: "⌄";
   color: white;
   font-weight: 700;
   float: right;
   margin-left: 5px;
 }
-
-.active:after {
+.collapse .active:after {
   content: "⌃";
 }
-
-.content {
+.collapse .content {
   padding: 0 18px;
   max-height: 0;
   overflow: hidden;
@@ -145,17 +148,12 @@ body {
 }
 
 .hero h1 {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
   color: white;
   position: absolute;
-  justify-content: center;
+  left: 20vw;
   z-index: 1;
   font-size: 48px;
   line-height: 68px;
-  left: 26%;
-  top: 24%;
 }
 
 .hero img {
@@ -178,8 +176,7 @@ body {
   gap: 32px;
   margin: 64px;
   flex-wrap: wrap;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding: 16px;
 }
 .main .card {
   width: 30%;
@@ -193,6 +190,10 @@ body {
   width: 100%;
   height: 80%;
   border-radius: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 .main .cardP {
   display: flex;
@@ -202,4 +203,85 @@ body {
   margin-top: 0;
   padding-left: 20px;
   font-size: 18px;
+}
+
+.mainLogement .hero {
+  position: relative;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  margin-left: 64px;
+  margin-right: 64px;
+  margin-bottom: 32px;
+}
+.mainLogement .hero img {
+  width: 100vw;
+  height: 423px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: left center;
+  object-position: left center;
+  border-radius: 25px;
+  background: black;
+  mix-blend-mode: darken;
+}
+.mainLogement .hero .chevrons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  color: white;
+  z-index: 2;
+}
+.mainLogement .hero .chevrons .chevronG {
+  display: flex;
+  border: 1px solid red;
+}
+.mainLogement .hero .chevrons .chevronD {
+  display: flex;
+  position: relative;
+  border: 1px solid red;
+}
+.mainLogement .collapse-Logement {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 64px;
+}
+.mainLogement .collapse-Logement .collapsible {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ff6060;
+  margin-bottom: 32px;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  height: 47px;
+  width: 30vw;
+  border-radius: 5px;
+}
+.mainLogement .collapse-Logement .active,
+.mainLogement .collapse-Logement .collapsible:hover {
+  color: white;
+}
+.mainLogement .collapse-Logement .collapsible:after {
+  content: "⌄";
+  color: white;
+  font-weight: 700;
+  float: right;
+  margin-left: 5px;
+}
+.mainLogement .collapse-Logement .active:after {
+  content: "⌃";
+}
+.mainLogement .collapse-Logement .content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
 }/*# sourceMappingURL=style.css.map */

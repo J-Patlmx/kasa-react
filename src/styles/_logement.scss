@@ -1,0 +1,91 @@
+.mainLogement {
+    .hero {
+        position: relative;
+        font-style: normal;
+        display: flex;
+        align-items: center;
+        margin-left: 64px;
+        margin-right: 64px;
+        margin-bottom: 32px;
+
+        img {
+            width: 100vw;
+            height: 423px;
+            -o-object-fit: cover;
+            object-fit: cover;
+            -o-object-position: left center;
+            object-position: left center;
+            border-radius: 25px;
+            background: black;
+            mix-blend-mode: darken;
+        }
+
+        .chevrons {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: absolute;
+            color: white;
+            z-index: 2;
+
+            .chevronG {
+                display: flex;
+                border: 1px solid red;
+            }
+            .chevronD {
+                display: flex;
+                position: relative;
+                border: 1px solid red;
+            }
+        }
+    }
+
+    .collapse-Logement {
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 64px;
+
+        .collapsible {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #ff6060;
+            margin-bottom: 32px;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            height: 47px;
+            width: 30vw;
+            border-radius: 5px;
+        }
+
+        .active,
+        .collapsible:hover {
+            color: white;
+        }
+
+        .collapsible:after {
+            content: '\2304';
+            color: white;
+            font-weight: 700;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .active:after {
+            content: '\2303';
+        }
+
+        .content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: #f1f1f1;
+        }
+    }
+}
