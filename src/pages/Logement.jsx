@@ -1,47 +1,57 @@
 import Hero from '../assets/imgHeroapropos.png'
+// import React, {useState, useEffect} from 'react';
+import Collaps from '../components/collapsLogement';
 
 function Logement() {
-    return ( <div className="mainLogement">
+  // const [logements, setlogements] = useState([]);
 
-    <div class="hero">
+  // useEffect(() => {
+  //     fetch('../../datas/logements.json'
+  //         ,{
+  //             headers : { 
+  //                 'Content-Type': 'application/json',
+  //                 'Accept': 'application/json'
+  //             }
+  //         }
+  //         )
+  //         .then(function(response){          
+  //         return response.json();
+  //         }).then(function(myJson) {          
+  //         setlogements( myJson);
+  //         // console.log(logements)
+  //         })
+  // }, []);
+
+
+const logementData = [
+        {
+            title:'Description',
+            content:"Vous serez à 50m du canal Saint-martin où vous pourrez pique-niquer 'été et à côté de nombreux bars et restaurants. Au cœur de Paris avec 5 lignes de métro et de nombreux bus.Logement parfait pour les voyageurs en sol et les voyageurs d'affaires. Vous êtes à1 station de la gare de l'est (7 minutes à pied). "
+        },
+        {
+            title:'Equipements',
+            content:"Climatisation Wi-Fi Cuisine Espace de travail Fer à repasser Sèche-cheveux Cintres"},
+        
+    ];
+
+    return ( 
+<>
+    <div className="hero">
     <img src={Hero} className="App-logo" alt="logo" />
     <div className="chevrons">
       <span><i className='chevronG'>ChevronG</i></span>
-      
       <span><i className='chevronD'>ChevronD</i></span>
     </div>
-
   </div>
+
+
     <div className='collapse-Logement'>
-  <div className="div1">
-        
-        <button className="collapsible">Description</button>
-        <div className="content">
-      <p>Vous serez à 50m du canal Saint-martin où vous pourrez pique-niquer
-        l'été et à côté de nombreux bars et restaurants. Au cœur de Paris avec 5 lignes de métro et de nombreux bus.
-        Logement parfait pour les voyageurs en solo
-        et les voyageurs d'affaires. Vous êtes à1 station de la gare de l'est (7 minutes à pied). </p>
-    </div>
-  </div>
+            {logementData.map(({ title, content }, index) => (
+                <Collaps title={title} content={content} key={index} />                    
+            ))}</div>
 
-      <div className="div2">
-        <button className="collapsible">Equipements</button>
-        <div className="content">
-            <ul>
-              <li>Climatisation</li>
-              <li>Wi-Fi</li>
-              <li>Cuisine</li>
-              <li>Espace de travail</li>
-              <li>Fer à repasser</li>
-              <li>Sèche-cheveux</li>
-              <li>Cintres</li>
-            </ul>
-        </div>
-      </div>
 
-</div>
-</div>
-      
+</>
     );
   }
   
