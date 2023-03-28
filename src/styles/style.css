@@ -1,9 +1,9 @@
-@charset "UTF-8";
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: "Montserrat", sans-serif;
 }
 
 main {
@@ -177,16 +177,17 @@ main {
   flex-wrap: wrap;
   padding: 32px 16px;
 }
-
-.card {
+.locationCards a {
+  text-decoration: none;
+}
+.locationCards .card {
   width: 30%;
-  /* width: 340px; */
   height: 340px;
   max-height: 30%;
   border-radius: 15px;
   background-color: #ff6060;
 }
-.card .imgAppt {
+.locationCards .card .imgAppt {
   width: 100%;
   height: 80%;
   border-radius: 15px;
@@ -195,8 +196,7 @@ main {
   -o-object-position: center;
      object-position: center;
 }
-
-.cardP {
+.locationCards .card .cardP {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -205,7 +205,7 @@ main {
   font-size: 16px;
 }
 
-.mainLogement .hero {
+.hero {
   position: relative;
   font-style: normal;
   display: flex;
@@ -214,7 +214,7 @@ main {
   margin-right: 64px;
   margin-bottom: 32px;
 }
-.mainLogement .hero img {
+.hero img {
   width: 100vw;
   height: 423px;
   -o-object-fit: cover;
@@ -225,7 +225,7 @@ main {
   background: black;
   mix-blend-mode: darken;
 }
-.mainLogement .hero .chevrons {
+.hero .chevrons {
   width: 100%;
   display: flex;
   align-items: center;
@@ -234,26 +234,29 @@ main {
   color: white;
   z-index: 2;
 }
-.mainLogement .hero .chevrons .chevronG {
+.hero .chevrons .chevronG {
   display: flex;
   border: 1px solid red;
 }
-.mainLogement .hero .chevrons .chevronD {
+.hero .chevrons .chevronD {
   display: flex;
   position: relative;
   border: 1px solid red;
 }
-.mainLogement .collapse-Logement {
+
+.collapse-Logement {
   display: flex;
-  flex-wrap: nowrap;
-  padding: 64px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 32px;
+  gap: 128px;
 }
-.mainLogement .collapse-Logement .collapsible {
+.collapse-Logement .collapsible {
+  margin-top: 32px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #ff6060;
-  margin-bottom: 32px;
   color: white;
   cursor: pointer;
   padding: 18px;
@@ -261,27 +264,14 @@ main {
   outline: none;
   font-size: 16px;
   height: 47px;
-  width: 30vw;
+  width: 80%;
   border-radius: 5px;
 }
-.mainLogement .collapse-Logement .active,
-.mainLogement .collapse-Logement .collapsible:hover {
-  color: white;
-}
-.mainLogement .collapse-Logement .collapsible:after {
-  content: "⌄";
-  color: white;
-  font-weight: 700;
-  float: right;
-  margin-left: 5px;
-}
-.mainLogement .collapse-Logement .active:after {
-  content: "⌃";
-}
-.mainLogement .collapse-Logement .content {
-  padding: 0 18px;
-  max-height: 0;
+.collapse-Logement .content {
+  padding: 32px 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: #f1f1f1;
+  color: rgb(255, 96, 96);
+  border-radius: 0 5px;
 }/*# sourceMappingURL=style.css.map */
