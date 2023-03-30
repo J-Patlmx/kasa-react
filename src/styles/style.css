@@ -135,6 +135,13 @@ main {
   color: rgb(255, 96, 96);
   width: 80%;
   border-radius: 0 5px;
+  line-height: 35px;
+  font-size: 24px;
+  font-weight: 400;
+}
+.collapsCollection .content p {
+  padding-left: 32px;
+  padding-right: 16px;
 }
 
 .heroHome .hero {
