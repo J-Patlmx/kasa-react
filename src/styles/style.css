@@ -19,7 +19,6 @@ main {
   transform: rotate(180deg);
 }
 
-/* Top bar */
 .top-bar {
   padding-left: 80px;
   padding-right: 80px;
@@ -27,18 +26,20 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 64px;
 }
 .top-bar .logo {
   height: 48px;
   margin-left: 16px;
 }
-.top-bar .App-link {
-  margin-left: 16px;
+.top-bar .Header-link {
+  display: flex;
+  gap: 16px;
+}
+.top-bar .Header-link .App-header-link {
   color: #ff6060;
   text-decoration: none;
 }
-.top-bar .App-link:hover {
+.top-bar .Header-link .App-header-link:hover {
   color: #ff5905;
   border-bottom: 1px solid #ff6060;
 }
@@ -55,24 +56,24 @@ main {
   margin-bottom: 16px;
 }
 
-.main .notfound {
+.notfound {
   font-weight: 700;
-  font-size: 288px;
-  line-height: 410.69px;
+  font-size: 200px;
+  line-height: 150px;
   text-align: center;
   color: #ff6060;
 }
-.main .pNotFound {
+
+.pNotFound {
   align-items: center;
   font-weight: 500;
   font-size: 36px;
-  line-height: 51.34px;
   text-align: center;
   color: #ff6060;
 }
-.main .backtoHome {
+
+.backtoHome {
   font-weight: 500;
-  font-size: 18px;
   line-height: 26px;
   text-align: center;
   color: #ff6060;
@@ -136,7 +137,7 @@ main {
   border-radius: 0 5px;
 }
 
-.hero {
+.heroHome .hero {
   position: relative;
   font-style: normal;
   display: flex;
@@ -145,8 +146,7 @@ main {
   margin-right: 64px;
   margin-bottom: 32px;
 }
-
-.hero h1 {
+.heroHome .hero h1 {
   color: white;
   position: absolute;
   left: 20vw;
@@ -154,8 +154,7 @@ main {
   font-size: 48px;
   line-height: 68px;
 }
-
-.hero img {
+.heroHome .hero img {
   width: 100vw;
   height: 223px;
   -o-object-fit: cover;
@@ -182,27 +181,32 @@ main {
 }
 .locationCards .card {
   width: 30%;
-  height: 340px;
   max-height: 30%;
   border-radius: 15px;
   background-color: #ff6060;
+  background: linear-gradient(rgba(255, 255, 255, 0) rgba(0, 0, 0, 0.5));
 }
 .locationCards .card .imgAppt {
   width: 100%;
-  height: 80%;
+  height: 100%;
   border-radius: 15px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+  background: linear-gradient(rgba(255, 255, 255, 0) rgba(0, 0, 0, 0.5));
 }
 .locationCards .card .cardP {
+  position: relative;
+  bottom: 100px;
   display: flex;
-  align-items: flex-start;
+  align-items: flex-end;
   justify-content: space-between;
   width: 50%;
-  color: white;
+  color: #ffffff;
   font-size: 16px;
+  border: 2px solid red;
+  padding-left: 16px;
 }
 
 .hero {

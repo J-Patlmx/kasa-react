@@ -1,28 +1,30 @@
-.hero {
-    position: relative;
-    font-style: normal;
-    display: flex;
-    align-items: center;
-    margin-left: 64px;
-    margin-right: 64px;
-    margin-bottom: 32px;
-}
-.hero h1 {
-    color: white;
-    position: absolute;
-    left: 20vw;
-    z-index: 1;
-    font-size: 48px;
-    line-height: 68px;
-}
-.hero img {
-    width: 100vw;
-    height: 223px;
-    object-fit: cover;
-    object-position: left center;
-    border-radius: 25px;
-    background: black;
-    filter: brightness(0.7);
+.heroHome {
+    .hero {
+        position: relative;
+        font-style: normal;
+        display: flex;
+        align-items: center;
+        margin-left: 64px;
+        margin-right: 64px;
+        margin-bottom: 32px;
+    }
+    .hero h1 {
+        color: white;
+        position: absolute;
+        left: 20vw;
+        z-index: 1;
+        font-size: 48px;
+        line-height: 68px;
+    }
+    .hero img {
+        width: 100vw;
+        height: 223px;
+        object-fit: cover;
+        object-position: left center;
+        border-radius: 25px;
+        background: black;
+        filter: brightness(0.7);
+    }
 }
 
 .locationCards {
@@ -37,28 +39,38 @@
     a {
         text-decoration: none;
     }
+
     .card {
         width: 30%;
-        height: 340px;
+        //   height: 340px;
         max-height: 30%;
         border-radius: 15px;
         background-color: #ff6060;
+        background: linear-gradient(rgba(255, 255, 255, 0) rgba(0, 0, 0, 0.5));
 
         .imgAppt {
             width: 100%;
-            height: 80%;
+            height: 100%;
             border-radius: 15px;
             object-fit: cover;
             object-position: center;
+            background: linear-gradient(
+                rgba(255, 255, 255, 0) rgba(0, 0, 0, 0.5)
+            );
         }
 
         .cardP {
+            position: relative;
+            bottom: 100px;
             display: flex;
-            align-items: flex-start;
+            align-items: flex-end;
             justify-content: space-between;
             width: 50%;
-            color: white;
+            color: #ffffff;
+
             font-size: 16px;
+            border: 2px solid red;
+            padding-left: 16px;
         }
     }
 }

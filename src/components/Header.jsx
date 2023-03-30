@@ -1,28 +1,17 @@
+import {NavLink} from "react-router-dom";
 import logo from '../assets/LOGO.png'
 function Header() {
     return (
       <div className="App">
         <header className="App-header top-bar">
           <img src={logo} className="App-logo" alt="logo" />
-          <nav>
-                  <a
-                    className="App-link"
-                    href="/home"
-                    rel="noopener noreferrer"> Accueil </a>
+<div className="Header-link">
+  
+  <NavLink className="App-header-link" to={"/Home"} >Accueil</NavLink>
+  
+  <NavLink className="App-header-link" to={"/About"}>A propos</NavLink>
+</div>
 
-              
-                    <a
-                    className="App-link"
-                    href="/About"
-                    rel="noopener noreferrer"> A propos </a>
-
-{/* <a
-                    className="App-link"
-                    href="/Page404"
-                    rel="noopener noreferrer"> 404 </a> */}
-
-                     
-            </nav>
         </header>
       </div>
     );

@@ -1,28 +1,27 @@
-/* Top bar */
 .top-bar {
-    // margin-top: 32px;
     padding-left: 80px;
     padding-right: 80px;
     margin: 32px 64px;
-    // margin-bottom: 32px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 64px;
+    // height: 64px;
 
     .logo {
         height: 48px;
         margin-left: 16px;
     }
 
-    .App-link {
-        margin-left: 16px;
-        color: #ff6060;
-        text-decoration: none;
-        &:hover {
-            color: #ff5905;
-
-            border-bottom: 1px solid #ff6060;
+    .Header-link {
+        display: flex;
+        gap: 16px;
+        .App-header-link {
+            color: #ff6060;
+            text-decoration: none;
+            &:hover {
+                color: #ff5905;
+                border-bottom: 1px solid #ff6060;
+            }
         }
     }
 }
