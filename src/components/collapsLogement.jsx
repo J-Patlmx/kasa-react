@@ -16,12 +16,14 @@ const Collaps = ({ title,content }) => {
         <>  
             <button className={className.header} onClick={() => {clickCollaps()}}>{title}
             <i className={className.myicon}></i>
-            
             </button>
+
             <div className={className.content}>
-                <p>{content}</p>
+                <li>{content}</li>
             </div>
         </>
+
+        
     );
 };
 

@@ -1,7 +1,10 @@
 import Hero from '../assets/imgHeroapropos.png'
 // import React, {useState, useEffect} from 'react';
 import Collaps from '../components/collapsLogement';
+// import Slider from '../components/slider';
 
+
+import React from "react";
 function Logement() {
   // const [logements, setlogements] = useState([]);
 
@@ -37,19 +40,35 @@ const logementData = [
     return ( 
 <>
     <div className="hero">
-    <img src={Hero} className="App-logo" alt="logo" />
+   <> <img src={Hero} className="App-logo" alt="logo" />
+   
     <div className="chevrons">
-      <span><i className='chevronG'>ChevronG</i></span>
-      <span><i className='chevronD'>ChevronD</i></span>
+    <span><i className='chevronSlider fa-solid fa-chevron-left'></i></span>
+      <span><i className='chevronSlider fa-solid fa-chevron-right'></i></span>
     </div>
+    </>
   </div>
+<div className="logement-page__title">
 
 
+      <div className="logement-page__subtitle">
+      <p className='cercle'>cercle</p>
+        <>
+        <i className="fa-regular fa-star"></i>
+        <i className="fa-regular fa-star"></i>
+        <i className="fa-regular fa-star"></i>
+        <i className="fa-regular fa-star"></i>
+        <i className="fa-regular fa-star"></i>
+        </>
+      </div>
+
+</div>
+<div className="collapsCollection">
     <div className='collapse-Logement'>
             {logementData.map(({ title, content }, index) => (
                 <Collaps title={title} content={content} key={index} />                    
             ))}</div>
-
+</div>
 
 </>
     );

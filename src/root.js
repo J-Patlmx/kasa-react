@@ -18,7 +18,6 @@ function AppRoutes() {
                     <Route path="/about" element={<About />} />
                     <Route path="/logement/:id" element={<Logement />} />
                     {/* Tout les root non disponible */}
-
                     <Route path="*" element={<Page404 />} />
                 </Routes>
             </main>

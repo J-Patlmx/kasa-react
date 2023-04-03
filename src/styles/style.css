@@ -156,7 +156,7 @@ main {
 .heroHome .hero h1 {
   color: white;
   position: absolute;
-  left: 20vw;
+  left: 10%;
   z-index: 1;
   font-size: 48px;
   line-height: 68px;
@@ -245,27 +245,44 @@ main {
   color: white;
   z-index: 2;
 }
-.hero .chevrons .chevronG {
-  display: flex;
-  border: 1px solid red;
-}
-.hero .chevrons .chevronD {
+.hero .chevrons .chevronSlider {
+  font-size: 48px;
   display: flex;
   position: relative;
   border: 1px solid red;
 }
 
-.collapse-Logement {
+.logement-page__subtitle {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 32px;
-  gap: 128px;
+  justify-content: right;
 }
-.collapse-Logement .collapsible {
-  margin-top: 32px;
+.logement-page__subtitle .cercle {
+  border: 1px solid gray;
+  background-color: #ff6060;
+  border-radius: 50px 50px 50px 50px;
   display: flex;
-  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+}
+.logement-page__subtitle .fa-star {
+  display: flex;
+}
+
+.collapsCollection {
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+  justify-content: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+.collapsCollection .collapse-Logement {
+  width: 40%;
+}
+.collapsCollection .collapse-Logement .collapsible {
+  margin-top: 32px;
   justify-content: space-between;
   background-color: #ff6060;
   color: white;
@@ -275,14 +292,15 @@ main {
   outline: none;
   font-size: 16px;
   height: 47px;
-  width: 80%;
+  width: 100%;
   border-radius: 5px;
 }
-.collapse-Logement .content {
+.collapsCollection .collapse-Logement .content {
   padding: 32px 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: #f1f1f1;
   color: rgb(255, 96, 96);
   border-radius: 0 5px;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
