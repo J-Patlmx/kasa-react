@@ -14,13 +14,15 @@
 
     .Header-link {
         display: flex;
+        font-size: 24px;
+        font-weight: 500;
         gap: 16px;
         .App-header-link {
             color: #ff6060;
             text-decoration: none;
             &:hover {
                 color: #ff5905;
-                border-bottom: 1px solid #ff6060;
+                border-bottom: 2px solid #ff6060;
             }
         }
     }

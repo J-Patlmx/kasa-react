@@ -31,6 +31,8 @@ main {
 }
 .top-bar .Header-link {
   display: flex;
+  font-size: 24px;
+  font-weight: 500;
   gap: 16px;
 }
 .top-bar .Header-link .App-header-link {
@@ -39,7 +41,7 @@ main {
 }
 .top-bar .Header-link .App-header-link:hover {
   color: #ff5905;
-  border-bottom: 1px solid #ff6060;
+  border-bottom: 2px solid #ff6060;
 }
 
 .footer {
