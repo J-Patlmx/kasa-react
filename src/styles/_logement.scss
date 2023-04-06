@@ -1,10 +1,8 @@
-.hero {
+.slider {
     position: relative;
     font-style: normal;
     display: flex;
     align-items: center;
-    margin-left: 64px;
-    margin-right: 64px;
     margin-bottom: 32px;
 
     img {
@@ -27,69 +25,159 @@
         position: absolute;
         color: white;
         z-index: 2;
+        font-size: 48px;
 
         .chevronSlider {
-            font-size: 48px;
             display: flex;
             position: relative;
             border: 1px solid red;
         }
     }
 }
-
-.logement-page__subtitle {
+.logement-page {
     display: flex;
-    flex-wrap: wrap;
-    // align-items: flex-end;
-    justify-content: right;
+    justify-content: space-between;
 
-    .cercle {
-        border: 1px solid gray;
-        background-color: #ff6060;
-        border-radius: 50px 50px 50px 50px;
-        display: flex;
-        justify-content: center;
-        width: 100px;
-        height: 100px;
+    .logementNameLoc {
+        color: #ff6060;
+
+        .logementTittle {
+            font-size: 32px;
+            line-height: 16px;
+            display: flex;
+            align-items: flex-end;
+            font-weight: 500;
+        }
+
+        .Localisation {
+            font-size: 18px;
+            line-height: 20px;
+            display: flex;
+            align-items: flex-end;
+            font-weight: 500;
+        }
     }
-    .fa-star {
+
+    .tags {
         display: flex;
+        gap: 16px;
+        .tag {
+            color: white;
+            width: 80px;
+            height: 24px;
+            background-color: #ff6060;
+            border-radius: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        :hover {
+            opacity: 0.9;
+        }
+    }
+
+    .logement-page__subtitle {
+        display: flex;
+
+        align-items: end;
+
+        flex-direction: column;
+        margin-bottom: 128px;
+
+        .host {
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+            .name {
+                color: #ff6060;
+                font-size: 18px;
+                font-weight: 500;
+                display: flex;
+                width: 60%;
+                align-items: end;
+            }
+            .picture {
+                border: 1px solid #e3e3e3;
+                background-image: url('https://source.unsplash.com/random');
+                border-radius: 50px;
+                width: 64px;
+                height: 64px;
+            }
+        }
+        .rating {
+            display: flex;
+            color: #e3e3e3;
+            font-size: 32px;
+            gap: 16px;
+            :hover {
+                color: #ff6060;
+                font-weight: 700;
+            }
+        }
     }
 }
-.collapsCollection {
+
+.CollapseRegroupement {
+    border: 2px solid red;
+    margin-bottom: 400px;
+    height: 600px;
     display: flex;
-    flex-wrap: nowrap;
-    position: relative;
-    justify-content: center;
-    justify-content: space-between;
-    margin-bottom: 32px;
+    justify-content: space-around;
     .collapse-Logement {
-        width: 40%;
         .collapsible {
-            margin-top: 32px;
-
-            // align-items: center;
-            justify-content: space-between;
-            background-color: #ff6060;
             color: white;
-            cursor: pointer;
-            padding: 18px;
-            border: none;
-            outline: none;
-            font-size: 16px;
-            height: 47px;
-            width: 100%;
+            background-color: #ff6060;
+            border: 2px solid black;
+            font-size: 18px;
+            font-weight: 500;
             border-radius: 5px;
-        }
-
-        .content {
-            padding: 32px 0;
-            overflow: hidden;
-            transition: max-height 0.2s ease-out;
-            background-color: #f1f1f1;
-            color: rgba(255, 96, 96, 1);
-            border-radius: 0 5px;
-            width: 100%;
+            line-height: 26px;
+            gap: 16px;
+            .content {
+                padding: 32px 0;
+                overflow: hidden;
+                transition: max-height 0.2s ease-out;
+                background-color: #f1f1f1;
+                color: rgba(255, 96, 96, 1);
+                border-radius: 0 5px;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 26px;
+            }
         }
     }
+    // .collapse-Logement {
+    // display: flex;
+    // flex-wrap: nowrap;
+    // position: relative;
+    // justify-content: center;
+    // justify-content: space-between;
+    // margin-bottom: 32px;
+    // width: 40%;
+    // .collapsible {
+    //     margin-top: 32px;
+    //     align-items: center;
+    //     justify-content: space-between;
+    //     background-color: #ff6060;
+    //     color: white;
+    //     cursor: pointer;
+    //     padding: 18px;
+    //     border: none;
+    //     outline: none;
+    //     font-size: 16px;
+    //     height: 47px;
+    //     width: 100%;
+    //     border-radius: 5px;
+    // }
+
+    // .content {
+    //     padding: 32px 0;
+    //     overflow: hidden;
+    //     transition: max-height 0.2s ease-out;
+    //     background-color: #f1f1f1;
+    //     color: rgba(255, 96, 96, 1);
+    //     border-radius: 0 5px;
+    //     width: 100%;
+    // }
+    // }
 }

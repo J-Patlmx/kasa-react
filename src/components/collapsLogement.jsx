@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Collaps = ({ title,content }) => {
+const Collaps = ({ title,content,list }) => {
 
     const [isOpen, setIsOpen] = useState(false);
 
@@ -10,6 +10,7 @@ const Collaps = ({ title,content }) => {
         header: `collapsible`,
         myicon: `fa-sharp fa-solid fa-chevron-up${isOpen ? '' : ' icon-rotate' }`,
         content:`content${isOpen ? ' ' : ' not-display'}`,
+  
       };
 
     return (
@@ -19,8 +20,9 @@ const Collaps = ({ title,content }) => {
             </button>
 
             <div className={className.content}>
-                <li>{content}</li>
+                <p>{content}</p>
             </div>
+           
         </>
 
         
