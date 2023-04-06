@@ -95,6 +95,7 @@
                 display: flex;
                 width: 60%;
                 align-items: end;
+                text-align: right;
             }
             .picture {
                 border: 1px solid #e3e3e3;
@@ -124,26 +125,35 @@
     display: flex;
     justify-content: space-around;
     .collapse-Logement {
+        // display: flex;
+        margin-right: 16px;
+        justify-content: space-between;
+        display: contents;
         .collapsible {
-            color: white;
-            background-color: #ff6060;
-            border: 2px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             font-size: 18px;
             font-weight: 500;
             border-radius: 5px;
             line-height: 26px;
-            gap: 16px;
-            .content {
-                padding: 32px 0;
-                overflow: hidden;
-                transition: max-height 0.2s ease-out;
-                background-color: #f1f1f1;
-                color: rgba(255, 96, 96, 1);
-                border-radius: 0 5px;
-                font-size: 18px;
-                font-weight: 400;
-                line-height: 26px;
-            }
+            color: white;
+            background-color: #ff6060;
+            border: 2px solid black;
+            width: 400px;
+            height: 50px;
+        }
+        .content {
+            padding: 32px 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: #f1f1f1;
+            color: rgba(255, 96, 96, 1);
+            border-radius: 0 5px;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 26px;
+            margin-top: 60px;
         }
     }
     // .collapse-Logement {

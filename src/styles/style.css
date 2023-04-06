@@ -153,10 +153,12 @@ main {
 .heroHome .hero h1 {
   color: white;
   position: absolute;
-  left: 10%;
+  left: 15%;
+  right: 15%;
   z-index: 1;
   font-size: 48px;
   line-height: 68px;
+  text-align: center;
 }
 .heroHome .hero img {
   width: 100vw;
@@ -197,7 +199,7 @@ main {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  background: linear-gradient(rgba(255, 255, 255, 0) rgba(0, 0, 0, 0.5));
+  background: rgba(0, 0, 0, 0.5);
 }
 .locationCards .card .cardP {
   position: relative;
@@ -205,11 +207,16 @@ main {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  width: 50%;
+  width: 55%;
   color: #ffffff;
   font-size: 16px;
-  border: 2px solid red;
   padding-left: 16px;
+}
+.locationCards .card .cardP:hover {
+  background: rgba(0, 0, 0, 0.313);
+  transform-origin: bottom left;
+  transition: 1.5s;
+  border-radius: 10px;
 }
 
 .slider {
@@ -302,6 +309,7 @@ main {
   display: flex;
   width: 60%;
   align-items: end;
+  text-align: right;
 }
 .logement-page .logement-page__subtitle .host .picture {
   border: 1px solid #e3e3e3;
@@ -328,17 +336,26 @@ main {
   display: flex;
   justify-content: space-around;
 }
+.CollapseRegroupement .collapse-Logement {
+  margin-right: 16px;
+  justify-content: space-between;
+  display: contents;
+}
 .CollapseRegroupement .collapse-Logement .collapsible {
-  color: white;
-  background-color: #ff6060;
-  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   font-size: 18px;
   font-weight: 500;
   border-radius: 5px;
   line-height: 26px;
-  gap: 16px;
+  color: white;
+  background-color: #ff6060;
+  border: 2px solid black;
+  width: 400px;
+  height: 50px;
 }
-.CollapseRegroupement .collapse-Logement .collapsible .content {
+.CollapseRegroupement .collapse-Logement .content {
   padding: 32px 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
@@ -348,4 +365,5 @@ main {
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
+  margin-top: 60px;
 }/*# sourceMappingURL=style.css.map */

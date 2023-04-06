@@ -4,17 +4,17 @@
         font-style: normal;
         display: flex;
         align-items: center;
-        // margin-left: 64px;
-        // margin-right: 64px;
         margin-bottom: 32px;
     }
     .hero h1 {
         color: white;
         position: absolute;
-        left: 10%;
+        left: 15%;
+        right: 15%;
         z-index: 1;
         font-size: 48px;
         line-height: 68px;
+        text-align: center;
     }
     .hero img {
         width: 100vw;
@@ -54,9 +54,7 @@
             border-radius: 15px;
             object-fit: cover;
             object-position: center;
-            background: linear-gradient(
-                rgba(255, 255, 255, 0) rgba(0, 0, 0, 0.5)
-            );
+            background: rgba(0, 0, 0, 0.5);
         }
 
         .cardP {
@@ -65,12 +63,17 @@
             display: flex;
             align-items: flex-end;
             justify-content: space-between;
-            width: 50%;
+            width: 55%;
             color: #ffffff;
-
             font-size: 16px;
-            border: 2px solid red;
             padding-left: 16px;
+            &:hover {
+                background: rgba(0, 0, 0, 0.313);
+                transform-origin: bottom left;
+                transition: 1.5s;
+                // border: 1px solid rgba(0, 0, 0, 0.313);
+                border-radius: 10px;
+            }
         }
     }
 }

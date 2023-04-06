@@ -95,11 +95,11 @@ function Logement() {
 
 <div className="CollapseRegroupement">
     <div className='collapse-Logement'>
-
             {logementData.map(({ title, content }, index) => (
                 <Collaps title={title} content={content} key={index} />
             ))}
     </div>
+ 
 </div> 
 
 </>
