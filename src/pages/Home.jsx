@@ -33,7 +33,7 @@ function Home() {
         
         <div className="locationCards">
         
-                {logements.map(({ id, title,cover },index) =>
+                {logements.map(({ id, title, cover },index) =>
                     <Card id={id} title= {title} cover = {cover} key={id}/>   
 				)}
         

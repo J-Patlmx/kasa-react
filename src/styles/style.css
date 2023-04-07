@@ -33,7 +33,7 @@ main {
   display: flex;
   font-size: 24px;
   font-weight: 500;
-  gap: 16px;
+  gap: 64px;
 }
 .top-bar .Header-link .App-header-link {
   color: #ff6060;
@@ -282,13 +282,16 @@ main {
 }
 .logement-page .tags .tag {
   color: white;
-  width: 80px;
-  height: 24px;
+  width: 150px;
+  height: 25px;
   background-color: #ff6060;
   border-radius: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
+  line-height: 20px;
+  font-weight: 500;
+  font-size: 14px;
 }
 .logement-page .tags :hover {
   opacity: 0.9;
@@ -315,7 +318,6 @@ main {
 }
 .logement-page .logement-page__subtitle .host .picture {
   border: 1px solid #e3e3e3;
-  background-image: url("https://source.unsplash.com/random");
   border-radius: 50px;
   width: 64px;
   height: 64px;
@@ -332,40 +334,17 @@ main {
 }
 
 .CollapseRegroupement {
-  border: 2px solid red;
-  margin-bottom: 400px;
-  height: 600px;
   display: flex;
-  justify-content: space-around;
-}
-.CollapseRegroupement .collapse-Logement {
-  margin-right: 16px;
   justify-content: space-between;
-  display: contents;
+  gap: 5%;
 }
-.CollapseRegroupement .collapse-Logement .collapsible {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 18px;
-  font-weight: 500;
-  border-radius: 5px;
-  line-height: 26px;
-  color: white;
-  background-color: #ff6060;
-  border: 2px solid black;
-  width: 400px;
-  height: 50px;
+.CollapseRegroupement > div {
+  flex: 1;
 }
-.CollapseRegroupement .collapse-Logement .content {
-  padding: 32px 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
-  color: rgb(255, 96, 96);
-  border-radius: 0 5px;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 26px;
-  margin-top: 60px;
+.CollapseRegroupement > div .collapsible,
+.CollapseRegroupement > div .content {
+  width: 100%;
+}
+.CollapseRegroupement > div .content {
+  min-height: 350px;
 }/*# sourceMappingURL=style.css.map */
