@@ -110,32 +110,33 @@
                 height: 64px;
             }
         }
+
         .rating {
             display: flex;
             color: #e3e3e3;
             font-size: 32px;
             gap: 16px;
+
             :hover {
                 color: #ff6060;
                 font-weight: 700;
             }
         }
     }
-}
+    .collapsCollection .CollapseRegroupement {
+        display: flex;
+        justify-content: space-between;
+        gap: 5%;
 
-.CollapseRegroupement {
-    display: flex;
-    justify-content: space-between;
-    gap: 5%;
-
-    > div {
-        flex: 1;
-        .collapsible,
-        .content {
-            width: 100%;
-        }
-        .content {
-            min-height: 350px;
+        > div {
+            flex: 1;
+            .collapsible,
+            .content {
+                width: 100%;
+            }
+            .content {
+                min-height: 350px;
+            }
         }
     }
 }

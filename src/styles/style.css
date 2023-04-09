@@ -332,19 +332,18 @@ main {
   color: #ff6060;
   font-weight: 700;
 }
-
-.CollapseRegroupement {
+.logement-page .collapsCollection .CollapseRegroupement {
   display: flex;
   justify-content: space-between;
   gap: 5%;
 }
-.CollapseRegroupement > div {
+.logement-page .collapsCollection .CollapseRegroupement > div {
   flex: 1;
 }
-.CollapseRegroupement > div .collapsible,
-.CollapseRegroupement > div .content {
+.logement-page .collapsCollection .CollapseRegroupement > div .collapsible,
+.logement-page .collapsCollection .CollapseRegroupement > div .content {
   width: 100%;
 }
-.CollapseRegroupement > div .content {
+.logement-page .collapsCollection .CollapseRegroupement > div .content {
   min-height: 350px;
 }/*# sourceMappingURL=style.css.map */
