@@ -21,7 +21,9 @@ const Collaps = ({ title, content }) => {
             <div className={className.content}>
                 <p>{content}</p>
             </div>
-           
+            {/* <ul className={className.content}>
+                <li>{content}</li>
+            </ul> */}
         </>
 
         
