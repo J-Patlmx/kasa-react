@@ -82,5 +82,5 @@ const params = useParams();
 
 
 
-  export default Logement;
+    export default Logement;
 

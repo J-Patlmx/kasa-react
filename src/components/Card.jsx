@@ -6,7 +6,7 @@ const Card = ({ id,title,cover }) => {
         <article className="card">
             <NavLink to={'/logement/' + id} >
                 <img src={cover} className="imgAppt" alt="logement a la location" />
-                <p className="cardP">{title}</p>
+                <h2 className="cardP">{title}</h2>
             </NavLink>
         </article>
     );
