@@ -43,110 +43,110 @@
             }
         }
     }
+}
 
-    .logement-page {
+.logement-page {
+    display: flex;
+    justify-content: space-between;
+
+    .logementNameLoc {
+        color: #ff6060;
+
+        .logementTittle {
+            font-size: 32px;
+            line-height: 16px;
+            display: flex;
+            align-items: flex-end;
+            font-weight: 500;
+        }
+
+        .Localisation {
+            font-size: 18px;
+            line-height: 20px;
+            display: flex;
+            align-items: flex-end;
+            font-weight: 500;
+        }
+    }
+
+    .tags {
         display: flex;
-        justify-content: space-between;
-
-        .logementNameLoc {
-            color: #ff6060;
-
-            .logementTittle {
-                font-size: 32px;
-                line-height: 16px;
-                display: flex;
-                align-items: flex-end;
-                font-weight: 500;
-            }
-
-            .Localisation {
-                font-size: 18px;
-                line-height: 20px;
-                display: flex;
-                align-items: flex-end;
-                font-weight: 500;
-            }
-        }
-
-        .tags {
+        gap: 16px;
+        .tag {
+            color: white;
+            width: 150px;
+            height: 25px;
+            background-color: #ff6060;
+            border-radius: 32px;
             display: flex;
-            gap: 16px;
-            .tag {
-                color: white;
-                width: 150px;
-                height: 25px;
-                background-color: #ff6060;
-                border-radius: 32px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                // padding-left: 16px;
-                // padding-right: 16px;
-                line-height: 20px;
-                font-weight: 500;
-                font-size: 14px;
-            }
-            :hover {
-                opacity: 0.9;
-            }
+            align-items: center;
+            justify-content: center;
+            // padding-left: 16px;
+            // padding-right: 16px;
+            line-height: 20px;
+            font-weight: 500;
+            font-size: 14px;
         }
-
-        .logement-page__subtitle {
-            display: flex;
-
-            align-items: end;
-
-            flex-direction: column;
-            margin-bottom: 128px;
-
-            .host {
-                display: flex;
-                justify-content: space-between;
-                gap: 16px;
-                .name {
-                    color: #ff6060;
-                    font-size: 18px;
-                    font-weight: 500;
-                    display: flex;
-                    width: 60%;
-                    align-items: end;
-                    text-align: right;
-                }
-                .picture {
-                    border: 1px solid #e3e3e3;
-                    // background-image: url('https://source.unsplash.com/random');
-                    border-radius: 50px;
-                    width: 64px;
-                    height: 64px;
-                }
-            }
-
-            .rating {
-                display: flex;
-                color: #e3e3e3;
-                font-size: 32px;
-                gap: 16px;
-
-                :hover {
-                    color: #ff6060;
-                    font-weight: 700;
-                }
-            }
+        :hover {
+            opacity: 0.9;
         }
-        .collapsCollection .CollapseRegroupement {
+    }
+
+    .logement-page__subtitle {
+        display: flex;
+
+        align-items: end;
+
+        flex-direction: column;
+        margin-bottom: 128px;
+
+        .host {
             display: flex;
             justify-content: space-between;
-            gap: 5%;
+            gap: 16px;
+            .name {
+                color: #ff6060;
+                font-size: 18px;
+                font-weight: 500;
+                display: flex;
+                width: 60%;
+                align-items: end;
+                text-align: right;
+            }
+            .picture {
+                border: 1px solid #e3e3e3;
+                // background-image: url('https://source.unsplash.com/random');
+                border-radius: 50px;
+                width: 64px;
+                height: 64px;
+            }
+        }
 
-            > div {
-                flex: 1;
-                .collapsible,
-                .content {
-                    width: 100%;
-                }
-                .content {
-                    min-height: 350px;
-                }
+        .rating {
+            display: flex;
+            color: #e3e3e3;
+            font-size: 32px;
+            gap: 16px;
+
+            :hover {
+                color: #ff6060;
+                font-weight: 700;
+            }
+        }
+    }
+    .collapsCollection .CollapseRegroupement {
+        display: flex;
+        justify-content: space-between;
+        gap: 5%;
+
+        > div {
+            flex: 1;
+            .collapsible,
+            .content {
+                width: 100%;
+            }
+            .content {
+                min-height: 350px;
             }
         }
     }
