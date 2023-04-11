@@ -119,7 +119,7 @@ main {
   align-items: center;
   justify-content: space-between;
   background-color: #ff6060;
-  color: white;
+  color: #ffffff;
   cursor: pointer;
   padding: 18px;
   border: none;
@@ -133,7 +133,7 @@ main {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: #f1f1f1;
-  color: rgb(255, 96, 96);
+  color: #ff6060;
   width: 80%;
   border-radius: 0 5px;
   line-height: 35px;
@@ -153,7 +153,7 @@ main {
   margin-bottom: 32px;
 }
 .heroHome .hero h1 {
-  color: white;
+  color: #ffffff;
   position: absolute;
   left: 15%;
   right: 15%;
@@ -175,7 +175,7 @@ main {
 }
 
 .locationCards {
-  background-color: rgb(246, 246, 246);
+  background-color: #f6f6f6;
   border-radius: 25px;
   display: flex;
   justify-content: space-evenly;
@@ -247,19 +247,20 @@ main {
   position: absolute;
 }
 .slider .chevrons .chevronSlider {
-  color: white;
+  padding-left: 16px;
+  padding-right: 16px;
+  color: #ffffff;
   z-index: 2;
   font-size: 48px;
   display: flex;
   position: relative;
-  border: 1px solid red;
 }
 .slider .chevrons .slider-Counter {
   position: absolute;
   width: 100%;
   font-size: 20px;
   text-align: center;
-  color: white;
+  color: #ffffff;
   bottom: -150px;
 }
 .slider .chevrons .slider-Counter:hover {
@@ -290,9 +291,10 @@ main {
 .logement-page .tags {
   display: flex;
   gap: 16px;
+  padding-left: 0;
 }
 .logement-page .tags .tag {
-  color: white;
+  color: #ffffff;
   width: 150px;
   height: 25px;
   background-color: #ff6060;
@@ -335,13 +337,16 @@ main {
 }
 .logement-page .logement-page__subtitle .rating {
   display: flex;
-  color: #e3e3e3;
+  font-weight: 700;
   font-size: 32px;
   gap: 16px;
 }
+.logement-page .logement-page__subtitle .rating .fa-star {
+  font-weight: 700;
+  color: #e3e3e3;
+}
 .logement-page .logement-page__subtitle .rating :hover {
   color: #ff6060;
-  font-weight: 700;
 }
 .logement-page .collapsCollection .CollapseRegroupement {
   display: flex;

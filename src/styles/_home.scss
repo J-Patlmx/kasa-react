@@ -1,3 +1,5 @@
+@import 'abstract/variables';
+
 .heroHome {
     .hero {
         position: relative;
@@ -7,7 +9,7 @@
         margin-bottom: 32px;
     }
     .hero h1 {
-        color: white;
+        color: $tertiary-colors;
         position: absolute;
         left: 15%;
         right: 15%;
@@ -28,7 +30,7 @@
 }
 
 .locationCards {
-    background-color: rgb(246, 246, 246);
+    background-color: #f6f6f6;
     border-radius: 25px;
     display: flex;
     justify-content: space-evenly;
@@ -42,10 +44,10 @@
 
     .card {
         width: 30%;
-        //   height: 340px;
+
         max-height: 30%;
         border-radius: 15px;
-        background-color: #ff6060;
+        background-color: $primary-color;
         background: linear-gradient(rgba(255, 255, 255, 0) rgba(0, 0, 0, 0.5));
 
         .imgAppt {
@@ -64,7 +66,7 @@
             align-items: flex-end;
             justify-content: space-between;
             width: 55%;
-            color: #ffffff;
+            color: $tertiary-colors;
             font-size: 16px;
             padding-left: 16px;
             &:hover {

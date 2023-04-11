@@ -1,25 +1,27 @@
+@import 'abstract/variables';
+
 .notfound {
     font-weight: 700;
     font-size: 200px;
     line-height: 150px;
     text-align: center;
-    color: #ff6060;
+    color: $primary-color;
 }
 
 .pNotFound {
     align-items: center;
     font-weight: 500;
     font-size: 36px;
-    // line-height: 51.34px;
+
     text-align: center;
-    color: #ff6060;
+    color: $primary-color;
 }
 .backtoHome {
     font-weight: 500;
-    // font-size: 18px;
+
     line-height: 26px;
     text-align: center;
-    color: #ff6060;
+    color: $primary-color;
     position: relative;
     bottom: 15.53%;
     display: flex;

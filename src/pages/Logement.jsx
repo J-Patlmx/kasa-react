@@ -1,4 +1,3 @@
-// import Collaps from '../components/collapsLogement';
 import Collaps from '../components/Collaps';
 import Slider from '../components/slider';
 import Rating from '../components/Rating';
@@ -50,8 +49,9 @@ const params = useParams();
                             <img src={CurrentLog?.host.picture} className="picture" alt="host_photo" />                     
                         </div>
 
-<>        <Rating note={CurrentLog.rating} />
-</>
+                    <>  
+                            <Rating note={CurrentLog.rating} />
+                    </>
 
                     </div>
 
@@ -70,8 +70,8 @@ const params = useParams();
                 {/* </div> */}
             </>
         )
-         :(<></>)}
-                  
+        :(<></>)}
+
     </>
     );
 }
