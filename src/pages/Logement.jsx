@@ -12,24 +12,20 @@ const [CurrentLog, setCurrentLog] = useState(null);
 
 const params = useParams();
 
-  useEffect(() => {
-      fetch('../../datas/logements.json',{
-          headers : { 
-              'Content-Type': 'application/json',
-              'Accept': 'application/json'
-          }
-      }
-      )
-      .then(function(response){ return response.json();})
-      .then(function(logs) {        
-        setCurrentLog(logs.find((log) => log.id === params.id) ? logs.find((log) => log.id === params.id) : ' not exist' )       
-    })
-      
-  }, [params.id]); 
-
-//   console.log(CurrentLog)
- 
-
+    useEffect(() => {
+        fetch('../../datas/logements.json',{
+            headers : { 
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            }
+        }
+        )
+        .then(function(response){ return response.json();})
+        .then(function(logs) {        
+            setCurrentLog(logs.find((log) => log.id === params.id) ? logs.find((log) => log.id === params.id) : ' not exist' )       
+        })
+        
+    }, [params.id]); 
 
     return (
         <>
@@ -44,9 +40,9 @@ const params = useParams();
                                 <p className='Localisation'>{CurrentLog.location}</p>
                             </div>
 
-                            <div className="tags"> 
-                            {CurrentLog.tags.map((tag, index) => <div className="tag" key={index}>{tag}</div>)}
-                            </div> 
+                            <ul className="tags"> 
+                            {CurrentLog.tags.map((tag, index) => <li className="tag" key={index}>{tag}</li>)}
+                            </ul> 
                     </div>
                     <div className="logement-page__subtitle">
                         <div className='host'>
@@ -54,10 +50,9 @@ const params = useParams();
                             <img src={CurrentLog?.host.picture} className="picture" alt="host_photo" />                     
                         </div>
 
-                       
 <>        <Rating note={CurrentLog.rating} />
 </>
-                       
+
                     </div>
 
                 </div>
@@ -77,7 +72,7 @@ const params = useParams();
         ):(<></>)}
     </>
     );
-  }
+}
 
 
 
