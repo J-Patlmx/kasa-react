@@ -26,7 +26,7 @@ function Home() {
         <>
         <div className="heroHome">
                 <div className="hero">
-                    <img src={Hero} className="App-logo" alt="logo" />
+                    <img src={Hero} className="heroHome" alt="logo" />
                     <h1>Chez vous, partout et ailleurs</h1>
                 </div>
         </div>

@@ -24,7 +24,7 @@ function About() {
     return (
         <>
             <div className="hero">
-                    <img src={Hero} className="App-logo" alt="logo" />
+                    <img src={Hero} className="heroAbout" alt="logo" />
             </div>
             <div className='collapsCollection'>
             {apropsData.map(({ title, content }, index) => (

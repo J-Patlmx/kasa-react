@@ -7,7 +7,7 @@ const [posi, setposi] = useState(0);
   return (
     <div className="slider">
 
-      <img src={slides[posi]} className="App-logo" alt="logo" />
+      <img src={slides[posi]} className="slideShow" alt="logo" />
 
       <div className="chevrons">{
       (slides.length > 1) && (
