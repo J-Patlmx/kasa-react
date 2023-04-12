@@ -3,13 +3,14 @@ import Slider from '../components/slider';
 import Rating from '../components/Rating';
 import  {React, useState, useEffect} from 'react';
 
-import { useParams} from 'react-router-dom';
+import { useParams, useNavigate} from 'react-router-dom';
 
 function Logement() {
 
 const [CurrentLog, setCurrentLog] = useState(null);
 
 const params = useParams();
+const navigate = useNavigate();
 
     useEffect(() => {
         fetch('../../datas/logements.json',{
@@ -21,10 +22,16 @@ const params = useParams();
         )
         .then(function(response){ return response.json();})
         .then(function(logs) {        
-            setCurrentLog(logs.find((log) => log.id === params.id) ? logs.find((log) => log.id === params.id) : ' not exist' )       
+            if (logs.find((log) => log.id === params.id) ){
+                setCurrentLog(logs.find((log) => log.id === params.id) )
+                
+            }
+            else {
+                navigate("/404");
+            }      
         })
         
-    }, [params.id]); 
+    }, [params.id, navigate]); 
 
     return (
         <>
@@ -56,18 +63,18 @@ const params = useParams();
                     </div>
 
                 </div>
-                {/* <div className='collapsCollection CollapseRegroupement'>   */}
+      
 
                 <div className='collapsCollection CollapseRegroupement'>
-            <Collaps className="collaps_CurrentLog" title="Description" content={CurrentLog.description} />
-            <Collaps className="collaps_CurrentLog" title="Equipements" content={CurrentLog.equipments.join(', ')} />
+
+            <div>
+                <Collaps title="Description" content={CurrentLog.description} />
+            </div>
+            <div>
+                <Collaps title="Equipements" content={CurrentLog.equipments} />
+            </div>
         </div>                  
-                        {/* {logementData.map(({ title, content }, index) => (
-                            <div key={index}>
-                                <Collaps title={title} content={content} />
-                            </div>
-                        ))}                         */}
-                {/* </div> */}
+
             </>
         )
         :(<></>)}

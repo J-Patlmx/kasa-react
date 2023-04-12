@@ -18,11 +18,24 @@ const Collaps = ({ title,content }) => {
             <i className={className.myicon}></i>
             
             </button>
-            <div className={className.content}>
-                <p>{content}</p>
+            <div className={className.content}>{
+                Array.isArray(content) ? 
+                (
+                   <ul>
+                    {content.map((item,i) => <li key={i}>{item}</li>)}
+                    </ul>
+                ) 
+                : (<p>{content}</p>)
+            }
             </div>
         </>
     );
 };
 
 export default Collaps;
+
+// TODO: class CollapsLog extends React.Component{
+//     constructor(props) {
+
+//     }
+// }

@@ -4,7 +4,7 @@
     .hero h1 {
         width: 100%;
         color: $tertiary-colors;
-        font-size: 40px;
+        font-size: 50px;
         font-weight: 500;
         text-align: center;
         position: absolute;
@@ -14,8 +14,8 @@
         object-fit: cover;
         border-radius: 20px;
         object-position: center 44%;
-        -webkit-filter: opacity(0.7) brightness(0.8);
-        filter: opacity(0.7) brightness(0.8);
+        -webkit-filter: opacity(0.8) brightness(0.6);
+        filter: opacity(0.8) brightness(0.6);
     }
 }
 
@@ -25,7 +25,6 @@
     display: flex;
     justify-content: space-evenly;
     gap: 32px;
-
     flex-wrap: wrap;
     padding: 32px 16px;
     a {
@@ -34,7 +33,6 @@
 
     .card {
         width: 30%;
-
         max-height: 30%;
         border-radius: 15px;
         background-color: $primary-color;
@@ -55,6 +53,7 @@
             width: 80%;
             color: $tertiary-colors;
             font-weight: 500;
+            font-size: 20px;
             padding-left: 16px;
             &:hover {
                 background: rgba(0, 0, 0, 0.313);
@@ -62,6 +61,27 @@
                 transition: 1.5s;
                 border-radius: 0 10px 10px 0;
             }
+        }
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .heroHome {
+        .hero h1 {
+            display: flex;
+            font-size: 30px;
+            text-align: left;
+            flex: 1;
+            align-items: flex-start;
+        }
+    }
+    .locationCards {
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 95vw;
+        background-color: none;
+        .card {
+            width: auto;
         }
     }
 }

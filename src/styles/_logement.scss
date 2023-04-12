@@ -139,21 +139,22 @@
     }
 
     // TODO: gerer les collaps afficher le li
+}
 
-    .collapsCollection .CollapseRegroupement {
-        display: flex;
-        justify-content: space-between;
-        gap: 5%;
+.CollapseRegroupement {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 5%;
 
-        > div {
-            flex: 1;
-            .collapsible,
-            .content {
-                width: 100%;
-            }
-            .content {
-                min-height: 350px;
-            }
+    > div {
+        flex: 1;
+        .collapsible,
+        .content {
+            width: 100%;
+        }
+        .content {
+            min-height: 200px;
         }
     }
 }
