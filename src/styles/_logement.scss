@@ -174,9 +174,9 @@
         }
     }
     .logement-page {
-        justify-content: center;
+        justify-content: flex-start;
         flex-wrap: wrap;
-        width: 99%;
+        width: 100%;
 
         .logementNameLoc {
             width: 96%;
@@ -202,7 +202,7 @@
         }
 
         .logement-page__subtitle {
-            width: 100vw;
+            width: 100%;
             align-items: center;
             justify-content: space-between;
             flex-wrap: nowrap;

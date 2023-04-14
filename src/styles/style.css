@@ -30,7 +30,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 64px;
+  height: 80px;
 }
 .top-bar .logo {
   height: 48px;
@@ -55,6 +55,7 @@ main {
   .top-bar {
     width: 100vw;
     margin: 0;
+    height: 64px;
   }
   .top-bar .App-logo {
     width: 135px;
@@ -65,22 +66,18 @@ main {
     font-size: 15px;
     font-weight: 400;
     width: 100%;
-    gap: 8px;
+    gap: 1px;
     margin: 16px;
-    border: 1px solid green;
   }
   .top-bar .Header-link .App-header-link {
-    color: #ff6060;
-    text-decoration: none;
     width: 100%;
   }
   .top-bar .Header-link .App-header-link:hover {
-    color: #ff5905;
     border-bottom: 2px solid #ff6060;
   }
 }
 .footer {
-  width: 100vw;
+  width: 100%;
   bottom: 0;
   background-color: black;
   color: white;
@@ -265,6 +262,9 @@ main {
 }
 
 @media only screen and (max-width: 767px) {
+  * {
+    border: 1px solid red;
+  }
   .heroHome {
     border-radius: 10px;
     width: 335px;
@@ -272,6 +272,7 @@ main {
   }
   .heroHome .hero img {
     height: 111px;
+    width: 100vw;
   }
   .heroHome .hero h1 {
     font-size: 25px;
@@ -452,9 +453,9 @@ main {
     display: none;
   }
   .logement-page {
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
-    width: 99%;
+    width: 100%;
   }
   .logement-page .logementNameLoc {
     width: 96%;
@@ -478,7 +479,7 @@ main {
     font-size: 10px;
   }
   .logement-page .logement-page__subtitle {
-    width: 100vw;
+    width: 100%;
     align-items: center;
     justify-content: space-between;
     flex-wrap: nowrap;

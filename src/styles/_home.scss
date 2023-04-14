@@ -69,12 +69,16 @@
 }
 
 @media only screen and (max-width: 767px) {
+    * {
+        border: 1px solid red;
+    }
     .heroHome {
         border-radius: 10px;
         width: 335px;
         height: 111px;
         .hero img {
             height: 111px;
+            width: 100vw;
         }
 
         .hero h1 {

@@ -5,7 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 64px;
+    height: 80px;
 
     .logo {
         height: 48px;
@@ -32,6 +32,7 @@
     .top-bar {
         width: 100vw;
         margin: 0;
+        height: 64px;
 
         .App-logo {
             width: 135px;
@@ -42,16 +43,12 @@
             font-size: 15px;
             font-weight: 400;
             width: 100%;
-            gap: 8px;
+            gap: 1px;
             margin: 16px;
-            border: 1px solid green;
 
             .App-header-link {
-                color: $primary-color;
-                text-decoration: none;
                 width: 100%;
                 &:hover {
-                    color: #ff5905;
                     border-bottom: 2px solid $primary-color;
                 }
             }
