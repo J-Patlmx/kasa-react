@@ -1,13 +1,11 @@
 @import 'abstract/variables';
 
 .top-bar {
-    // padding-left: 80px;
-    // padding-right: 80px;
     margin: 32px 64px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // height: 64px;
+    height: 64px;
 
     .logo {
         height: 48px;
@@ -32,23 +30,26 @@
 }
 @media only screen and (max-width: 768px) {
     .top-bar {
-        width: 100%;
+        width: 100vw;
         margin: 0;
 
         .App-logo {
-            width: 150px;
+            width: 135px;
             margin: 16px;
         }
         .Header-link {
             display: flex;
-            font-size: 16px;
+            font-size: 15px;
             font-weight: 400;
-            gap: 16px;
+            width: 100%;
+            gap: 8px;
             margin: 16px;
+            border: 1px solid green;
 
             .App-header-link {
                 color: $primary-color;
                 text-decoration: none;
+                width: 100%;
                 &:hover {
                     color: #ff5905;
                     border-bottom: 2px solid $primary-color;

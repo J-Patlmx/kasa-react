@@ -30,6 +30,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 64px;
 }
 .top-bar .logo {
   height: 48px;
@@ -52,23 +53,26 @@ main {
 
 @media only screen and (max-width: 768px) {
   .top-bar {
-    width: 100%;
+    width: 100vw;
     margin: 0;
   }
   .top-bar .App-logo {
-    width: 150px;
+    width: 135px;
     margin: 16px;
   }
   .top-bar .Header-link {
     display: flex;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
-    gap: 16px;
+    width: 100%;
+    gap: 8px;
     margin: 16px;
+    border: 1px solid green;
   }
   .top-bar .Header-link .App-header-link {
     color: #ff6060;
     text-decoration: none;
+    width: 100%;
   }
   .top-bar .Header-link .App-header-link:hover {
     color: #ff5905;
@@ -76,7 +80,7 @@ main {
   }
 }
 .footer {
-  width: 100%;
+  width: 100vw;
   bottom: 0;
   background-color: black;
   color: white;
