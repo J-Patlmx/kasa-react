@@ -21,6 +21,7 @@ main {
 
 @media only screen and (max-width: 768px) {
   main {
+    border: 1px solid blue;
     margin-left: 16px;
     margin-right: 16px;
   }
@@ -53,27 +54,27 @@ main {
 
 @media only screen and (max-width: 768px) {
   .top-bar {
-    width: 100vw;
+    width: 100%;
     margin: 0;
     height: 64px;
+  }
+  .top-bar .logo {
+    margin-left: 0;
   }
   .top-bar .App-logo {
     width: 135px;
     margin: 16px;
   }
   .top-bar .Header-link {
-    display: flex;
     font-size: 15px;
     font-weight: 400;
     width: 100%;
-    gap: 1px;
-    margin: 16px;
+    justify-content: start;
+    margin: 0px;
+    gap: 48px;
   }
   .top-bar .Header-link .App-header-link {
-    width: 100%;
-  }
-  .top-bar .Header-link .App-header-link:hover {
-    border-bottom: 2px solid #ff6060;
+    max-width: 100%;
   }
 }
 .footer {

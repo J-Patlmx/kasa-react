@@ -30,27 +30,26 @@
 }
 @media only screen and (max-width: 768px) {
     .top-bar {
-        width: 100vw;
+        width: 100%;
         margin: 0;
         height: 64px;
-
+        .logo {
+            margin-left: 0;
+        }
         .App-logo {
             width: 135px;
             margin: 16px;
         }
         .Header-link {
-            display: flex;
             font-size: 15px;
             font-weight: 400;
             width: 100%;
-            gap: 1px;
-            margin: 16px;
+            justify-content: start;
+            margin: 0px;
+            gap: 48px;
 
             .App-header-link {
-                width: 100%;
-                &:hover {
-                    border-bottom: 2px solid $primary-color;
-                }
+                max-width: 100%;
             }
         }
     }
