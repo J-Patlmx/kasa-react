@@ -18,7 +18,7 @@ function Home() {
             return response.json();
             }).then(function(myJson) {          
             setlogements( myJson);
-            // console.log(logements)
+       
             })
     }, []);
 
@@ -31,14 +31,12 @@ function Home() {
                 </div>
         </div>
         
-        <div className="locationCards">
+        <section className="locationCards">
         
                 {logements.map(({ id, title, cover },index) =>
                     <Card id={id} title= {title} cover = {cover} key={id}/>   
 				)}
-        
-
-        </div>
+        </section>
         </>
 );}
 export default Home;

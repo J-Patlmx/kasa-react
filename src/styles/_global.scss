@@ -15,8 +15,9 @@ main {
 .icon-rotate {
     transform: rotate(180deg);
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 768px) {
     main {
-        margin: 0;
+        margin-left: 16px;
+        margin-right: 16px;
     }
 }

@@ -7,8 +7,8 @@
     margin-bottom: 32px;
 
     img {
-        width: 100vw;
-        height: 423px;
+        width: 100%;
+        height: 425px;
         -o-object-fit: cover;
         object-fit: cover;
         -o-object-position: left center;
@@ -95,16 +95,16 @@
 
     .logement-page__subtitle {
         display: flex;
-
         align-items: end;
-
         flex-direction: column;
-        margin-bottom: 128px;
+        margin-bottom: 48px;
 
         .host {
             display: flex;
             justify-content: space-between;
             gap: 16px;
+            margin-bottom: 16px;
+
             .name {
                 color: $primary-color;
                 font-size: 18px;
@@ -116,7 +116,7 @@
             }
             .picture {
                 border: 1px solid $secondary-colors;
-                // background-image: url('https://source.unsplash.com/random');
+
                 border-radius: 50px;
                 width: 64px;
                 height: 64px;
@@ -137,8 +137,6 @@
             }
         }
     }
-
-    // TODO: gerer les collaps afficher le li
 }
 
 .CollapseRegroupement {
@@ -154,10 +152,83 @@
             width: 100%;
         }
         .content {
-            min-height: 200px;
+            min-height: 300px;
             li {
                 list-style: none;
             }
         }
+    }
+}
+@media only screen and (max-width: 768px) {
+    body {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    .slider {
+        width: 100%;
+        overflow: hidden;
+        height: 250px;
+        border-radius: 20px;
+        .slider-Counter {
+            display: none;
+        }
+    }
+    .logement-page {
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 99%;
+
+        .logementNameLoc {
+            width: 96%;
+
+            .logementTittle {
+                font-size: 18px;
+                line-height: 26px;
+            }
+            .Localisation {
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+        .tags {
+            align-items: flex-start;
+            .tag {
+                border-radius: 5px;
+                width: 100px;
+                height: 20px;
+                line-height: 14px;
+                font-size: 10px;
+            }
+        }
+
+        .logement-page__subtitle {
+            width: 100vw;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            flex-direction: row-reverse;
+            margin-bottom: 16px;
+            .host {
+                align-items: center;
+                margin-bottom: 0;
+                .name {
+                    width: 80px;
+                    font-size: 20px;
+                    flex-wrap: wrap;
+                }
+            }
+
+            .rating {
+                width: 98px;
+                font-size: 18px;
+                text-align: left;
+            }
+        }
+    }
+
+    .CollapseRegroupement {
+        width: 100%;
+
+        flex-wrap: wrap;
     }
 }

@@ -3,10 +3,10 @@ import logo from '../assets/LOGO-2.png'
 
 function footer() {
     return (
-     <div className="footer">
+     <footer className="footer">
      <img src={logo} className="App-logo" alt="logo" />
      <p>© 2020 Kasa. All rights reserved</p>
-</div>
+</footer>
     )};
 
   
