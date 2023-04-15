@@ -169,6 +169,11 @@
         overflow: hidden;
         height: 250px;
         border-radius: 20px;
+
+        img {
+            object-position: center;
+        }
+
         .slider-Counter {
             display: none;
         }
@@ -222,6 +227,7 @@
                 width: 98px;
                 font-size: 18px;
                 text-align: left;
+                gap: 8px;
             }
         }
     }

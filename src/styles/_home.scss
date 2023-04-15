@@ -37,44 +37,41 @@
         width: 30%;
         max-height: 30%;
         border-radius: 20px;
-
         background-color: $primary-color;
-        background: linear-gradient(rgba(255, 255, 255, 0) rgba(0, 0, 0, 0.5));
+    }
+    .imgAppt {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        background: rgba(0, 0, 0, 0.5);
 
-        .imgAppt {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-            background: rgba(0, 0, 0, 0.5);
-            border-radius: 20px;
-        }
+        border-radius: 20px;
+    }
 
-        .cardP {
-            position: relative;
-            bottom: 100px;
-            width: 80%;
-            color: $tertiary-colors;
-            font-weight: 500;
-            font-size: 20px;
-            padding-left: 16px;
-            &:hover {
-                background: rgba(0, 0, 0, 0.313);
-                transform-origin: bottom left;
-                transition: 1.5s;
-                // border-radius: 0 10px 10px 0;
-            }
+    .cardP {
+        position: relative;
+        bottom: 100px;
+        width: 80%;
+        color: $tertiary-colors;
+        font-weight: 500;
+        font-size: 20px;
+        padding-left: 16px;
+        &:hover {
+            background: rgba(0, 0, 0, 0.313);
+            transform-origin: bottom left;
+            transition: 1.5s;
         }
     }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
     // * {
     //     border: 1px solid red;
     // }
     .heroHome {
         border-radius: 10px;
-        width: 335px;
+        // width: 335px;
         height: 111px;
         .hero img {
             height: 111px;
@@ -91,10 +88,11 @@
 
     .locationCards {
         background: none;
+        flex-direction: column;
 
         .card {
             height: 250px;
-            width: 335px;
+            width: 100%;
             border-radius: 20px;
         }
     }

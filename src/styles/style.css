@@ -61,14 +61,14 @@ main {
     margin-left: 0;
   }
   .top-bar .App-logo {
-    width: 135px;
+    width: 95px;
     margin: 16px;
   }
   .top-bar .Header-link {
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 400;
     width: 100%;
-    justify-content: start;
+    justify-content: end;
     margin: 0px;
     gap: 48px;
   }
@@ -111,7 +111,7 @@ main {
   text-align: center;
   color: #ff6060;
   position: relative;
-  bottom: 15.53%;
+  bottom: 16%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -234,9 +234,8 @@ main {
   max-height: 30%;
   border-radius: 20px;
   background-color: #ff6060;
-  background: linear-gradient(rgba(255, 255, 255, 0) rgba(0, 0, 0, 0.5));
 }
-.locationCards .card .imgAppt {
+.locationCards .imgAppt {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -246,7 +245,7 @@ main {
   background: rgba(0, 0, 0, 0.5);
   border-radius: 20px;
 }
-.locationCards .card .cardP {
+.locationCards .cardP {
   position: relative;
   bottom: 100px;
   width: 80%;
@@ -255,16 +254,15 @@ main {
   font-size: 20px;
   padding-left: 16px;
 }
-.locationCards .card .cardP:hover {
+.locationCards .cardP:hover {
   background: rgba(0, 0, 0, 0.313);
   transform-origin: bottom left;
   transition: 1.5s;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .heroHome {
     border-radius: 10px;
-    width: 335px;
     height: 111px;
   }
   .heroHome .hero img {
@@ -279,10 +277,11 @@ main {
   }
   .locationCards {
     background: none;
+    flex-direction: column;
   }
   .locationCards .card {
     height: 250px;
-    width: 335px;
+    width: 100%;
     border-radius: 20px;
   }
 }
@@ -446,6 +445,10 @@ main {
     height: 250px;
     border-radius: 20px;
   }
+  .slider img {
+    -o-object-position: center;
+       object-position: center;
+  }
   .slider .slider-Counter {
     display: none;
   }
@@ -496,6 +499,7 @@ main {
     width: 98px;
     font-size: 18px;
     text-align: left;
+    gap: 8px;
   }
   .CollapseRegroupement {
     width: 100%;
