@@ -56,6 +56,7 @@ main {
     width: 100%;
     margin: 0;
     height: 64px;
+    margin-bottom: 8px;
   }
   .top-bar .logo {
     margin-left: 0;
@@ -69,11 +70,7 @@ main {
     font-weight: 400;
     width: 100%;
     justify-content: end;
-    margin: 0px;
-    gap: 48px;
-  }
-  .top-bar .Header-link .App-header-link {
-    max-width: 100%;
+    margin: 20px;
   }
 }
 .footer {
@@ -435,10 +432,6 @@ main {
 }
 
 @media only screen and (max-width: 768px) {
-  body {
-    margin-left: 8px;
-    margin-right: 8px;
-  }
   .slider {
     width: 100%;
     overflow: hidden;

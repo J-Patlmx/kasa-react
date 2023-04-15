@@ -33,6 +33,7 @@
         width: 100%;
         margin: 0;
         height: 64px;
+        margin-bottom: 8px;
 
         .logo {
             margin-left: 0;
@@ -45,15 +46,8 @@
             font-size: 16px;
             font-weight: 400;
             width: 100%;
-            // justify-content: flex-start;
             justify-content: end;
-
-            margin: 0px;
-            gap: 48px;
-
-            .App-header-link {
-                max-width: 100%;
-            }
+            margin: 20px;
         }
     }
 }
