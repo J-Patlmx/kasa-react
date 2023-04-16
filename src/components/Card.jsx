@@ -1,6 +1,6 @@
 import {NavLink} from "react-router-dom";
 
-const Card = ({ id,title,cover }) => { 
+const Card = ({ id,title,cover }) => {
 
     return (
         <article className="card">

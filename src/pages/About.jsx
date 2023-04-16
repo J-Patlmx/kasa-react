@@ -2,7 +2,7 @@ import Hero from '../assets/imgHeroapropos.png'
 import Collaps from '../components/Collaps';
 
 function About() {
-    const apropsData = [
+    const apropsData = [ // Tableau de données pour les collaps
         {
             title:'Fiabilité',
             content:"Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."
@@ -28,7 +28,7 @@ function About() {
             </div>
             <div className='collapsCollection'>
             {apropsData.map(({ title, content }, index) => (
-                <Collaps title={title} content={content} key={index} />                    
+                <Collaps title={title} content={content} key={index} />   // Boucle qui affiche chaque collapsible         
             ))}</div>
 
         </>
