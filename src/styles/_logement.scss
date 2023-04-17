@@ -168,6 +168,7 @@
 
         img {
             object-position: center;
+            height: 250px;
         }
 
         .slider-Counter {
@@ -230,7 +231,6 @@
 
     .CollapseRegroupement {
         width: 100%;
-
-        flex-wrap: wrap;
+        flex-direction: column;
     }
 }
