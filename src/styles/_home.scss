@@ -6,7 +6,9 @@
     height: 250px;
 
     .hero img {
+        -o-object-fit: cover;
         object-fit: cover;
+        -o-object-position: center 44%;
         object-position: center 44%;
         -webkit-filter: opacity(0.8) brightness(0.6);
         filter: opacity(0.8) brightness(0.6);
@@ -42,7 +44,9 @@
     .imgAppt {
         width: 100%;
         height: 100%;
+        -o-object-fit: cover;
         object-fit: cover;
+        -o-object-position: center;
         object-position: center;
         background: rgba(0, 0, 0, 0.5);
 
@@ -66,12 +70,9 @@
 }
 
 @media only screen and (max-width: 768px) {
-    // * {
-    //     border: 1px solid red;
-    // }
     .heroHome {
         border-radius: 10px;
-        // width: 335px;
+
         height: 111px;
         .hero img {
             height: 111px;

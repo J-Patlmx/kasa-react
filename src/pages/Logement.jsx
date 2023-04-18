@@ -15,6 +15,7 @@ const navigate = useNavigate();
 
 // Utilisation du hook useEffect pour effectuer une action après chaque rendu de la page
     useEffect(() => {// Appel de l'API avec la méthode fetch()
+        window.scrollTo(0,0);
         fetch('../../datas/logements.json',{
             headers : { 
                 'Content-Type': 'application/json',
