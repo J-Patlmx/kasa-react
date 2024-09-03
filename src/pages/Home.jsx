@@ -19,11 +19,11 @@ function Home() {
             return response.json();
             }).then(function(myJson) {          
             setlogements( myJson);   // MAJ du state logements avec les données récupérées
-       
+
             })
     }, []);// Exécute le hook useEffect une seule fois, au montage du component
 
- return (
+    return (
         <>
         <div className="heroHome">
                 <div className="hero">
@@ -38,7 +38,7 @@ function Home() {
                     On utilise le component Card pour afficher les info
                     On ajoute l'id unique pour chaque card grâce à la propriété "key"
             */}
-                {logements.map(({ id, title, cover },index) =>
+                {logements.map(({ id, title, cover }) =>
                     <Card id={id} title= {title} cover = {cover} key={id}/>   
 				)}
         </section>
