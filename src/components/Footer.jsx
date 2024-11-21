@@ -5,7 +5,7 @@ function footer() {
         <footer className="footer">
             <img src={logo} className="App-logo" alt="logo" />
             <p>
-                <a className="a_footer" href="https://dev-dread.vercel.app">
+                <a className="a_footer" href="https://devdread.fr">
                     créé avec amour par © Dev Dread
                 </a>
             </p>
